@@ -1,5 +1,4 @@
-# Creating the README.md file with the provided content
-readme_content = """# **PartSelect Chatbot: AI-Powered Appliance Parts Retrieval System** 🚀
+**PartSelect Chatbot: AI-Powered Appliance Parts Retrieval System** 🚀
 
 This project is an AI-powered chatbot designed to assist users in retrieving detailed information about appliance parts, specifically **refrigerators** and **dishwashers**. The system utilizes **FastAPI**, **Pinecone for vector storage**, and **DeepSeek AI embeddings** for intelligent retrieval.
 
