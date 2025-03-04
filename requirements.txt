@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+selenium
+undetected-chromedriver
+beautifulsoup4
+tqdm
+openai
+pinecone-client
+python-dotenv
