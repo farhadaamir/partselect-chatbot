@@ -1,0 +1,150 @@
+@import "rsuite/dist/rsuite.css";
+
+/* #337778 partselect theme color */
+/* set ai response background to this theme */
+/* implement loading dots if time */
+
+.messages-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2px;
+  font-size: 16px;
+  margin-top: 60px; 
+  margin-bottom: 70px; 
+}
+
+.user-message-container,
+.assistant-message-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 4px 0;
+}
+
+.user-message-container {
+  align-self: flex-end;
+  align-items: flex-end;
+}
+
+.assistant-message-container {
+  align-items: flex-start;
+}
+
+.message {
+  white-space: pre-line;
+  padding: 14px;
+  margin: 2px 0;
+  border-radius: 10px;
+  clear: both;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.user-message {
+  align-self: flex-end;
+  font-size: 13px;
+  background-color: #f6f6f6;
+  color: #000000;
+  border-top-right-radius: 0;
+  text-align: left;
+}
+
+.assistant-message {
+  align-self: flex-start;
+  background-color: #337778;
+  border-top-left-radius: 0;
+  color: #ffffff;
+  padding: 14px;
+  font-size: 13px;
+  width: 70%;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.input-area {
+  font-size: 15px;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  border-top: 1px solid #ccc;
+  background: #fff;
+  position: fixed;
+  width: calc(100% - 40px);
+}
+
+.input-area textarea {
+  font-size: 15px;
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  resize: none;
+  overflow-y: auto;
+  min-height: 200px;
+  max-height: 200px;
+  margin-right: 10px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+}
+
+.input-area button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #337778;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* implement later if time */
+.typing-loader {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 15px; 
+  margin: 5px 10px; 
+  padding: 5px 10px; 
+  background-color: #337778; 
+  border-radius: 10px;
+  max-width: fit-content;
+}
+
+
+.typing-loader span {
+  width: 6px; 
+  height: 6px; 
+  margin: 0 3px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  animation: typing 1.5s infinite ease-in-out;
+}
+
+.typing-loader span:nth-child(1) { animation-delay: 0s; }
+.typing-loader span:nth-child(2) { animation-delay: 0.2s; }
+.typing-loader span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes typing {
+  0% { transform: translateY(0); opacity: 0.3; }
+  50% { transform: translateY(-5px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 0.3; }
+}
+
